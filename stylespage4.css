@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 10rem;
+}
+.navbar {
+  background-color: #FDE3FA;
+  font-size: 1.3rem;
+  overflow: hidden;
+}
+
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1;
+  color: black;
+  list-style-type: none;
+  margin: 0.5rem 10rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ffcff9;
+  border-radius: 2rem;
+  color: black;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+main {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.map-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0efff;
+}
+
+.map-section h1 {
+  margin-bottom: 10px;
+  font-size: 24px; 
+}
+
+.map-section p {
+  margin-bottom: 20px;
+}
+
+#map {
+  height:550px;
+  background: url('path-to-your-map-image.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+#endereco {
+  margin-top: 10px; 
+  font-size: 16px; 
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  background-color: #FDE3FA;
+  
+}
+
+#footer h2{
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+
+#footer-right {
+  display: flex;
+
+}
+
+#medals img{
+  width: 2.3rem;
+  height: auto;
+  display:flex;
+  flex-direction: column;
+  padding: 0.7rem 2rem
+}
+
+
+@media screen and (max-width: 768px) {
+  .video-container iframe, 
+  .map-section #map, 
+  .tips-carousel, 
+  .procedures-section #procedure-description {
+    width: 100%;
+    height: auto;
+  }
+
+  .tips-carousel, 
+  .procedures-section #procedure-description {
+    height: auto;
+    padding: 10px;
+  }
+
+  input[type="text"], button {
+    padding: 15px;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .video-container iframe, 
+  .map-section #map {
+    width: 80%;
+    margin: auto;
+  }
+
+  .tips-carousel, 
+  .procedures-section #procedure-description {
+    width: 80%;
+    margin: auto;
+    height: 150px;
+  }
+
+  input[type="text"], button {
+    max-width: 500px;
+    margin: auto;
+  }
+}
